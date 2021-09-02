@@ -10,7 +10,7 @@ function Home() {
             <Container fluid style={{"max-width": "1100px"}}>
                 <Row>
                     <Col>
-                        <h1>ESTAMOS NO BRANCH DE TESTE Conectando você com profissionais renomados do mercado.</h1>
+                        <h1>ULTIMO BRANCH</h1>
                     </Col>
                     <Col>
                         <img style={{"float":"right"}} src="/worker.png" alt="me" width="400" height="600" />
