@@ -1,8 +1,9 @@
 import { Navbar, Container } from 'react-bootstrap'
+import style from './navbar.module.css'
 
 function NavBar() {
     return (
-        <Navbar>
+        <Navbar className={style.navbar}>
             <Container>
                 <Navbar.Brand href="/">
                     <h1>Hoomp</h1>
