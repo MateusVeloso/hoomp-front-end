@@ -1,11 +1,22 @@
 import Link from 'next/link';
+import Image from 'next/Image';
+import NavBar from '../components/navbar/navbar'
+import { Container, Row, Col } from 'react-bootstrap';
 
 function Home() {
     return (
         <>
-            <h1>HOOMP</h1>
-            <h4>A maneira fácil e rápida de encontrar profissionais.</h4>
-            <br></br>
+            <NavBar />
+            <Container fluid style={{"max-width": "1100px"}}>
+                <Row>
+                    <Col>
+                        <h1>Conectando você com profissionais renomados do mercado.</h1>
+                    </Col>
+                    <Col>
+                        <Image style={{"float":"right"}} src="/worker.png" alt="me" width="400" height="600" />
+                    </Col>
+                </Row>
+            </Container>
             <Link href="/sobre">
                 <a>Acessar página Sobre</a>
             </Link>
