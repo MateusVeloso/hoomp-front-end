@@ -10,9 +10,10 @@ function Tempo(props) {
     )
 }
 
-// Função executada apenas no momento do build da aplicação.
+// Função executada apenas no momento d o build da aplicação.
 // Ideal para deixar valores "default" enquanto os valores são carregados.
-export function getStaticProps() {
+export async function getStaticProps() {
+    await delay(5000);
     const staticDate = new Date();
     const staticDateString = staticDate.toGMTString();
 
@@ -22,5 +23,7 @@ export function getStaticProps() {
         }
     }
 }
+
+const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 export default Tempo;
