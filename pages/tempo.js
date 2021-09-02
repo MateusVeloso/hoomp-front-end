@@ -20,7 +20,9 @@ export async function getStaticProps() {
         props: {
             staticDateString
         },
-        revalidate: 1
+        //Após um acesso, verificar o tempo do arquivo em cache,
+        //Caso tenha passado 60 segundos, revalidar as propriedades estaticas.
+        revalidate: 60
     }
 }
 // const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
