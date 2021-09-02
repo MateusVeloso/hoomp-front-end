@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Image from 'next/Image';
+// import Image from 'next/Image';
 import NavBar from '../components/navbar/navbar'
 import { Container, Row, Col } from 'react-bootstrap';
 
@@ -13,7 +13,7 @@ function Home() {
                         <h1>Conectando você com profissionais renomados do mercado.</h1>
                     </Col>
                     <Col>
-                        <Image style={{"float":"right"}} src="/worker.png" alt="me" width="400" height="600" />
+                        <img style={{"float":"right"}} src="/worker.png" alt="me" width="400" height="600" />
                     </Col>
                 </Row>
             </Container>
