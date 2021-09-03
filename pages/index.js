@@ -7,7 +7,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 function Home() {
     return (
-        <>
+        <div style={{overflowX: "hidden"}}>
             <NavBar />
             <Container fluid style={{ "maxWidth": "1200px", "marginBottom": "250px"}}>
                 <Row>
@@ -33,7 +33,7 @@ function Home() {
             <Link href="/sobre">
                 <a>Acessar página Sobre</a>
             </Link>
-        </>
+        </div>
     )
 }
 
