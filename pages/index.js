@@ -1,8 +1,8 @@
 import Link from 'next/link';
-// import Image from 'next/Image';
-import NavBar from '../components/navbar/navbar'
-import Category from '../components/category/category'
-import SearchBox from '../components/searchBox/searchBox'
+import NavBar from '../components/navbar/navbar';
+import Category from '../components/category/category';
+import Services from '../components/services/services';
+import SearchBox from '../components/searchBox/searchBox';
 import { Container, Row, Col } from 'react-bootstrap';
 
 function Home() {
@@ -21,6 +21,11 @@ function Home() {
                 <Row>
                     <Col>
                         <Category />
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <Services />
                     </Col>
                 </Row>
             </Container>

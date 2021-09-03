@@ -1,55 +1,52 @@
 // import Button from 'react-bootstrap/Button'
 import style from './category.module.css'
-import { House } from 'react-bootstrap-icons';
+import { faCar, faCogs, faHome, faTshirt, faGlassCheers, faHeartbeat, faTools, faLaptopCode, faHandsHelping, faGraduationCap } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function Category() {
     return (
         <div className={style.container__category}>
-            <h1 className={style.title}>Menu das categorias de serviços</h1>
+            <h1 className={style.title}>Principais categorias de serviços</h1>
             <div className={style.container__item}>
                 <div className={style.item}>
-                    <House color="#FFA500" size={50} />
+                    <FontAwesomeIcon icon={faHome} />
                     Serviços domésticos
                 </div>
                 <div className={style.item}>
-                    <House color="#FFA500" size={50} />
-                    Serviços domésticos
+                    <FontAwesomeIcon icon={faCogs} />
+                    Assistência técnica
                 </div>
                 <div className={style.item}>
-                    <House color="#FFA500" size={50} />
-                    Serviços domésticos
+                    <FontAwesomeIcon icon={faCar} />
+                    Autos
                 </div>
                 <div className={style.item}>
-                    <House color="#FFA500" size={50} />
-                    Serviços domésticos
+                    <FontAwesomeIcon icon={faTshirt} />
+                    Moda e beleza
                 </div>
                 <div className={style.item}>
-                    <House color="#FFA500" size={50} />
-                    Serviços domésticos
+                    <FontAwesomeIcon icon={faHeartbeat} />
+                    Saúde
                 </div>
                 <div className={style.item}>
-                    <House color="#FFA500" size={50} />
-                    Serviços domésticos
+                    <FontAwesomeIcon icon={faTools} />
+                    Reformas e reparos
                 </div>
                 <div className={style.item}>
-                    <House color="#FFA500" size={50} />
-                    Serviços domésticos
+                    <FontAwesomeIcon icon={faGlassCheers} />
+                    Eventos
                 </div>
                 <div className={style.item}>
-                    <House color="#FFA500" size={50} />
-                    Serviços domésticos
+                    <FontAwesomeIcon icon={faLaptopCode} />
+                    Design e Tecnologia
                 </div>
                 <div className={style.item}>
-                    <House color="#FFA500" size={50} />
-                    Serviços domésticos
+                    <FontAwesomeIcon icon={faHandsHelping} />
+                    Consultoria
                 </div>
                 <div className={style.item}>
-                    <House color="#FFA500" size={50} />
-                    Serviços domésticos
-                </div>
-                <div className={style.item}>
-                    <House color="#FFA500" size={50} />
-                    Serviços domésticos
+                    <FontAwesomeIcon icon={faGraduationCap} />
+                    Aulas
                 </div>
             </div>
 
