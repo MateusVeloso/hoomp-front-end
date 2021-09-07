@@ -1,18 +1,28 @@
 .navbar {
+    background: white;
     margin-bottom: 40px;
-    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid #ccc;
+    /* -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2); */
 }
 
 .lb_nav {
     text-decoration: none;
-    font-size: 20px;
     font-weight: 700;
     color: #000;
 }
 
-
 .lb_container {
     margin: 0px 20px;
+}
+
+.h5 {
+    cursor: pointer;
+    margin-bottom: 0px;
+    margin-left: 15px;
+}
+
+.title_home {
+    cursor: pointer;
 }

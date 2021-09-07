@@ -1,0 +1,11 @@
+.container__statistics{
+}
+
+.container__statistics > h5 {
+    width: 100%;
+    text-align: left;
+    color: #666;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}

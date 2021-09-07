@@ -1,0 +1,86 @@
+
+.container__header {
+    /* background: rgba(255,5,0,0.05); */
+    /* -webkit-box-shadow: 0px 5px 5px 1px rgba(255,177,43,1); */
+    /* -moz-box-shadow: 0px 5px 5px 1px rgba(255,177,43,1); */
+    /* box-shadow: 0px 0px 3px 0px #00008B;
+    border-radius: 10px; */
+    /* border: 1px solid #ccc; */
+    border-bottom: 1px solid #d9d9d9;
+    background: white;
+    max-width: 1200px;
+    margin-bottom: 10px;
+    padding: 10px;
+    /* border-radius: 10px; */
+    /* Borda para quando tiver tipo */
+    /* background-image: linear-gradient(white, white), linear-gradient(to top, #ffa500, #ffe0b5); */
+    /* background-origin: border-box; */
+    /* background-clip: content-box, border-box; */
+}
+
+.container__image_profile {
+    position: relative;
+    width: 215px;
+    height: 215px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    /* bordar para quando tiver tipo ( diamante ouro etc... ) */
+    /* border: double 2px transparent;
+    border-radius: 50%;
+    background-image: linear-gradient(white, white), linear-gradient(to bottom, #ADD8E6, #00008B);
+    background-origin: border-box;
+    background-clip: content-box, border-box; */
+    overflow: hidden;
+    float: left;
+}
+
+.container__image_profile img {
+    max-width: 100%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    /* -moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1); */
+    transform: scale(1);
+}
+
+.container__image_profile img:hover {
+    transform: scale(1.1);
+}
+
+.container__info_profile {
+    float: left;
+    margin-left: 30px;
+    margin-top: 25px;
+}
+
+.container__info_profile>h3 {
+    color: #444;
+}
+
+.container__info_profile>h5 {
+    color: #444;
+}
+
+.container__info_profile>h5 svg {
+    margin-left: 5px;
+}
+
+.container__info_profile>h6 {
+    max-width: 450px;
+    max-height: 76px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* white-space: nowrap; */
+}
+
+.container__info_contact {
+    padding-top: 25px;
+    text-align: right;
+    color: #444;
+}
+
+.container__info_contact > a{
+    margin-left: 10px;
+    cursor: pointer;
+}

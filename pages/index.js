@@ -11,7 +11,7 @@ function Home() {
     return (
         <div style={{overflowX: "hidden"}}>
             <NavBar />
-            <Container fluid style={{ "maxWidth": "1200px", "marginBottom": "250px"}}>
+            <Container fluid style={{ "maxWidth": "1200px", "marginBottom": "250px" , "padding": "20px", "background": "white", "borderRadius": "15px"}}>
                 <Row>
                     <Col>
                         <SearchBox />
@@ -32,9 +32,9 @@ function Home() {
                 </Row>
             </Container>
             
-            <Link href="/sobre">
+            {/* <Link href="/sobre">
                 <a>Acessar página Sobre</a>
-            </Link>
+            </Link> */}
         </div>
     )
 }
