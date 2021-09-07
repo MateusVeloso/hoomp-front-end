@@ -3,7 +3,9 @@ import NavBar from '../components/navbar/navbar';
 import Category from '../components/category/category';
 import Services from '../components/services/services';
 import SearchBox from '../components/searchBox/searchBox';
+import ImageHome from '../components/imageHome/imageHome';
 import { Container, Row, Col } from 'react-bootstrap';
+import Image from 'next/image';
 
 function Home() {
     return (
@@ -15,7 +17,7 @@ function Home() {
                         <SearchBox />
                     </Col>
                     <Col>
-                        <img style={{"float":"right"}} src="/worker.png" alt="me" width="350" height="500" />
+                        <ImageHome />
                     </Col>
                 </Row>
                 <Row>
