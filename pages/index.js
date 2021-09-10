@@ -12,7 +12,7 @@ function Home() {
         <div style={{overflowX: "hidden"}}>
             <NavBar />
             <Container fluid style={{ "maxWidth": "1200px", "marginBottom": "250px" , "padding": "20px", "background": "white", "borderRadius": "15px"}}>
-                <Row> DEPLOY AGORA
+                <Row>
                     <Col>
                         <SearchBox />
                     </Col>
