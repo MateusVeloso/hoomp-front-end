@@ -21,6 +21,20 @@
     cursor: pointer;
     margin-bottom: 0px;
     margin-left: 15px;
+    padding: 10px;
+    border: 2px solid transparent;
+}
+
+.h5__cad{
+    cursor: pointer;
+    margin-bottom: 0px;
+    margin-left: 15px;
+    padding: 10px 25px;
+    border: 2px solid #FFA500;
+    color: #FFA500;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 700;
 }
 
 .title_home {

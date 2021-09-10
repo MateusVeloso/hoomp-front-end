@@ -8,7 +8,7 @@ function Services() {
         <div className={style.container__service}>
             <h1 className={style.title}>Serviços mais procurados</h1>
             <CardGroup>
-                <Card>
+                <Card className={style.card}>
                     <Card.Img variant="top" src="/electrician.jpg" />
                     <Card.Body>
                         <Card.Title>Serviço de Eletricista</Card.Title>
@@ -20,7 +20,7 @@ function Services() {
                         <a href="#login" className={style.lb_footer}>Encontrar profissionais</a>
                     </Card.Footer>
                 </Card>
-                <Card>
+                <Card className={style.card}>
                     <Card.Img variant="top" src="/bricklayer.jpg" />
                     <Card.Body>
                         <Card.Title>Serviço de Pedreiro</Card.Title>
@@ -32,7 +32,7 @@ function Services() {
                         <a href="#login" className={style.lb_footer}>Encontrar profissionais</a>
                     </Card.Footer>
                 </Card>
-                <Card>
+                <Card className={style.card}>
                     <Card.Img variant="top" src="/painting.jpg" />
                     <Card.Body>
                         <Card.Title>Serviço de Pintura</Card.Title>

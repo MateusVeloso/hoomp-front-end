@@ -28,3 +28,12 @@
     color: #195ca9;
     font-weight: 700;
 }
+
+.card {
+    margin: 0 20px;
+    
+    border: 1px solid #ccc !important;
+    border-radius: 5px !important;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1);
+}
