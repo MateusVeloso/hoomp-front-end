@@ -65,7 +65,7 @@ function Header() {
                         </div>
                     </Col>
                     <Col sm={1} xl={8} style={{ "padding": "20px", "background": "white" }}>
-                        <h5 style={{ "border-bottom": "1px solid #ccc", "padding-bottom": "15px", "margin-bottom": "20px" }}><FontAwesomeIcon icon={faTrophy} style={{ "margin-right": "10px" }} />Ultimas avaliações </h5>
+                        <h5 style={{ borderBottom: "1px solid #ccc", paddingBottom: "15px", marginBottom: "20px" }}><FontAwesomeIcon icon={faTrophy} style={{ marginRight: "10px" }} />Ultimas avaliações </h5>
                         <Card style={{ width: '13rem', float: 'left' }}>
                             {/* <Image src="/rudy.jpg" alt="me" layout='fill' /> */}
                             <Card.Img variant="top" src="/geniheire.png" />

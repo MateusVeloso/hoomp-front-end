@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import NavBar from '../components/navbar/navbar'
+import NavBar from 'components/navbar/navbar'
 
 function Sobre() {
     return (
