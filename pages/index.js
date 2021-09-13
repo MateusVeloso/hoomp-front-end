@@ -14,6 +14,7 @@ function Home() {
             <Container fluid className={"container__global"}>
                 <Row>
                     <Col sm={1} xl={8}>
+                        TESTE
                         <SearchBox />
                     </Col>
                     <Col sm={1} xl={4}>
