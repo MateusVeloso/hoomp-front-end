@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import NavBar from 'components/navbar/navbar';
+import Footer from 'components/footer/footer';
 import Category from 'components/category/category';
 import Services from 'components/services/services';
 import SearchBox from 'components/searchBox/searchBox';
@@ -30,6 +31,7 @@ function Home() {
                     </Col>
                 </Row>
             </Container>
+            <Footer/>
             
             {/* <Link href="/sobre">
                 <a>Acessar página Sobre</a>
