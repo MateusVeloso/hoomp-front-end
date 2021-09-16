@@ -10,16 +10,16 @@ interface IParams extends ParsedUrlQuery {
     search: string
 }
 
-export async function getStaticPaths() {
-    return {
-        // paths: [{
-        //     params: {
-        //         search: 'Pedreiro'
-        //     }
-        // }],
-        fallback: 'blocking'
-    }
-}
+// export async function getStaticPaths() {
+//     return {
+//         // paths: [{
+//         //     params: {
+//         //         search: 'Pedreiro'
+//         //     }
+//         // }],
+//         fallback: 'blocking'
+//     }
+// }
 
 export const getStaticProps: GetStaticProps = async (context) => {
     const { search } = context.params as IParams  // no longer causes error
