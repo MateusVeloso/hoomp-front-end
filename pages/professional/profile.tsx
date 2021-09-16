@@ -1,5 +1,5 @@
-import NavBar from '../../components/navbar/navbar';
-import Header from '../../components/professional/profile/header/header';
+import NavBar from 'components/navbar';
+import Header from 'components/professional/profile/header';
 
 function Profile() {
 

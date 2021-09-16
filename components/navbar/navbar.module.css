@@ -25,6 +25,10 @@
     border: 2px solid transparent;
 }
 
+/* .navbar-nav > * + * { */
+    /* margin-left: 25px !important; */
+/* } */
+
 .h5__cad{
     cursor: pointer;
     margin-bottom: 0px;

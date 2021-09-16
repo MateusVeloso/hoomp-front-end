@@ -1,3 +1,11 @@
+import { GetStaticPaths, GetStaticProps } from 'next'
+import { ParsedUrlQuery } from 'querystring'
+import { InferGetStaticPropsType } from 'next'
+
+interface IParams extends ParsedUrlQuery {
+    slug: string
+}
+
 export async function getStaticPaths() {
     // fallback :
     // 1 - false ( 404 para páginas que nao está no paths )
@@ -17,10 +25,10 @@ export async function getStaticPaths() {
     }
 }
 
-export async function getStaticProps(context) {
-    const id = context.params.id;
+export const getStaticProps: GetStaticProps = async (context) => {
+    const { id } = context.params as IParams // no longer causes error
     // Consultar tudo relacionado ao id 
-    
+    // const props = fetch(`/api/${slug}`)
     return {
         props: {
             id: id
@@ -28,7 +36,7 @@ export async function getStaticProps(context) {
     }
 }
 
-function User(props) {
+function User({ props }: InferGetStaticPropsType<typeof getStaticProps>) {
     return <div>Id do usuário : {props.id}</div>
 }
 

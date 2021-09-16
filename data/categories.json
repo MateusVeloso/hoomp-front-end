@@ -1,0 +1,52 @@
+[
+    {
+        "title": "Serviços domésticos",
+        "path": "/",
+        "icon": "faHome"
+    },
+    {
+        "title": "Assistência técnica",
+        "path": "/",
+        "icon": "faCogs"
+    },
+    {
+        "title": "Autos",
+        "path": "/",
+        "icon": "faCar"
+    },
+    {
+        "title": "Moda e beleza",
+        "path": "/",
+        "icon": "faTshirt"
+    },
+    {
+        "title": "Saúde",
+        "path": "/",
+        "icon": "faHeartbeat"
+    },
+    {
+        "title": "Reformas e reparos",
+        "path": "/",
+        "icon": "faTools"
+    },
+    {
+        "title": "Eventos",
+        "path": "/",
+        "icon": "faGlassCheers"
+    },
+    {
+        "title": "Design e Tecnologia",
+        "path": "/",
+        "icon": "faLaptopCode"
+    },
+    {
+        "title": "Consultoria",
+        "path": "/",
+        "icon": "faHandsHelping"
+    },
+    {
+        "title": "Aulas",
+        "path": "/",
+        "icon": "faGraduationCap"
+    }
+]

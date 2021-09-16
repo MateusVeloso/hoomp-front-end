@@ -1,11 +1,11 @@
 import Link from 'next/link';
-import NavBar from 'components/navbar/navbar'
+import NavBar from 'components/navbar'
 
-function Contato() {
+function Sobre() {
     return (
         <>
             <NavBar />
-            <h1>Contato</h1>
+            <h1>Sobre Nós</h1>
             <h4>...</h4>
             <br></br>
             <Link href="/">
@@ -15,4 +15,4 @@ function Contato() {
     )
 }
 
-export default Contato;
+export default Sobre;

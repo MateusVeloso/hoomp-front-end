@@ -1,4 +1,4 @@
-import NavBar from 'components/navbar/navbar';
+import NavBar from 'components/navbar';
 import { Container, Row, Col } from 'react-bootstrap';
 import Image from 'next/image';
 import style from './search.module.css';

@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 import { SocialIcon } from 'react-social-icons';
-import Statistics from '../statistics/statistics'
+import Statistics from 'components/professional/profile/statistics';
 
 
 function Header() {
