@@ -2,6 +2,13 @@ import NavBar from 'components/navbar';
 import { Container, Row, Col } from 'react-bootstrap';
 import Image from 'next/image';
 import style from './search.module.css';
+import { GetStaticPaths, GetStaticProps } from 'next'
+import { ParsedUrlQuery } from 'querystring'
+import { InferGetStaticPropsType } from 'next'
+
+interface IParams extends ParsedUrlQuery {
+    search: string
+}
 
 export async function getStaticPaths() {
     return {
@@ -14,8 +21,8 @@ export async function getStaticPaths() {
     }
 }
 
-export async function getStaticProps(context) {
-    const search = context.params.search;
+export const getStaticProps: GetStaticProps = async (context) => {
+    const { search } = context.params as IParams  // no longer causes error
     // Consultar tudo relacionado ao id 
 
     return {
@@ -25,7 +32,7 @@ export async function getStaticProps(context) {
     }
 }
 
-function Search(props) {
+function Search({ props }: InferGetStaticPropsType<typeof getStaticProps>) {
 
     return (
         <>

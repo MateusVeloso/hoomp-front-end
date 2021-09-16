@@ -1,3 +1,12 @@
+import { GetStaticPaths, GetStaticProps } from 'next'
+import { ParsedUrlQuery } from 'querystring'
+import { InferGetStaticPropsType } from 'next'
+
+
+interface IParams extends ParsedUrlQuery {
+    profession: string
+}
+
 export async function getStaticPaths() {
     // fallback :
     // 1 - false ( 404 para páginas que nao está no paths )
@@ -13,8 +22,8 @@ export async function getStaticPaths() {
     }
 }
 
-export async function getStaticProps(context) {
-    const profession = context.params.profession;
+export const getStaticProps: GetStaticProps = async (context) => {
+    const { profession } = context.params as IParams // no longer causes error
     // Consultar tudo relacionado ao id 
 
     return {
@@ -25,7 +34,7 @@ export async function getStaticProps(context) {
 }
 
 
-function SearchProfession(props) {
+function SearchProfession({ props }: InferGetStaticPropsType<typeof getStaticProps>) {
     return <div>Id do usuário : {props.profession}</div>
 }
 

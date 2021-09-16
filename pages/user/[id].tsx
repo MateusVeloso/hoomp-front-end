@@ -3,7 +3,7 @@ import { ParsedUrlQuery } from 'querystring'
 import { InferGetStaticPropsType } from 'next'
 
 interface IParams extends ParsedUrlQuery {
-    slug: string
+    id: string
 }
 
 export async function getStaticPaths() {
