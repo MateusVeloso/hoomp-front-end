@@ -11,7 +11,8 @@ function SearchBox() {
     const initSearch = () => {
         if (!search) {
             // e.target.focus();
-            document.getElementById('search').focus();
+            const search = document.getElementById('search') as HTMLElement;
+            search.focus();
             return;
         };
         Router.push({
@@ -19,13 +20,13 @@ function SearchBox() {
         });
     }
 
-    const checkSearch = async (event) => {
-        if (event.keyCode == 13 && search) {
-            Router.push({
-                pathname: `/search/${search}`,
-            });
-        };
-    }
+    // const checkSearch = async (event: React.FormEvent) => {
+    //     if (event.keyCode == 13 && search) {
+    //         Router.push({
+    //             pathname: `/search/${search}`,
+    //         });
+    //     };
+    // }
 
 
     return (
@@ -38,7 +39,7 @@ function SearchBox() {
                 className={style.input_search}
                 placeholder={'O que você precisa?'}
                 onChange={e => { setSearch(e.currentTarget.value); }}
-                onKeyUp={(event) => { checkSearch(event) }} />
+                onKeyUp={(event) => { }} />
             <Button className={style.button} variant="primary" size={'lg'} onClick={initSearch}>Buscar</Button>
 
         </div>
