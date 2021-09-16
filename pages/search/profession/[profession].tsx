@@ -13,12 +13,12 @@ export async function getStaticPaths() {
     // 2 - true ( aceita qualquer )
     // 3 - blocking ( bloqueia a request até gerar a página final ) OBS: 1 VEZ GERADA VAI PARA CACHE
     return {
-        paths: [{
-            params: {
-                profession: 'Protetico'
-            }
-        }],
-        fallback: false
+        // paths: [{
+        //     params: {
+        //         profession: 'Protetico'
+        //     }
+        // }],
+        fallback: 'blocking'
     }
 }
 

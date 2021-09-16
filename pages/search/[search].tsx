@@ -12,11 +12,11 @@ interface IParams extends ParsedUrlQuery {
 
 export async function getStaticPaths() {
     return {
-        paths: [{
-            params: {
-                search: 'Pedreiro'
-            }
-        }],
+        // paths: [{
+        //     params: {
+        //         search: 'Pedreiro'
+        //     }
+        // }],
         fallback: 'blocking'
     }
 }
