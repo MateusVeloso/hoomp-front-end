@@ -10,29 +10,37 @@ interface IParams extends ParsedUrlQuery {
     search: string
 }
 
-// export async function getStaticPaths() {
-//     return {
-//         // paths: [{
-//         //     params: {
-//         //         search: 'Pedreiro'
-//         //     }
-//         // }],
-//         fallback: 'blocking'
-//     }
-// }
+type Params = {
+    params: {
+        search: string
+    }
+}
 
-export const getStaticProps: GetStaticProps = async (context) => {
-    const { search } = context.params as IParams  // no longer causes error
+export async function getStaticPaths() {
+    return {
+        paths: [{
+            params: {
+                search: 'Pedreiro'
+            }
+        }],
+        fallback: 'blocking'
+    }
+}
+
+export const getStaticProps = async ({ params }: Params) => {
+    // export const getStaticProps: GetStaticProps = async (context) => {
+    // const { search } = context.params as IParams  // no longer causes error
+    const { search } = params
     // Consultar tudo relacionado ao id 
 
     return {
         props: {
-            search: search
+            search: (search ? search : "Pedreiro")
         }
     }
 }
 
-function Search({ props }: InferGetStaticPropsType<typeof getStaticProps>) {
+function Search({ params }: Params) {
 
     return (
         <>
@@ -41,7 +49,7 @@ function Search({ props }: InferGetStaticPropsType<typeof getStaticProps>) {
             <Container fluid className={"container__global"}>
                 <Row>
                     <Col>
-                        <h1>Está procurando por {props.search}?</h1>
+                        <h1>Está procurando por {params.search}?</h1>
                     </Col>
                 </Row>
                 <Row>
