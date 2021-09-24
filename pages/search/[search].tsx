@@ -18,11 +18,7 @@ type Params = {
 
 export async function getStaticPaths() {
     return {
-        paths: [{
-            params: {
-                search: 'Pedreiro'
-            }
-        }],
+        paths: [],
         fallback: 'blocking'
     }
 }
@@ -34,8 +30,11 @@ export const getStaticProps = async ({ params }: Params) => {
     // Consultar tudo relacionado ao id 
 
     return {
+        // props: {
+        //     search: (search ? search : "Pedreiro")
+        // }
         props: {
-            search: (search ? search : "Pedreiro")
+            // search: (search ? search : "Pedreiro")
         }
     }
 }
