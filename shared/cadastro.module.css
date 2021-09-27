@@ -1,0 +1,18 @@
+.line {
+    font-size: 48px;
+    color: #4c5355;
+    padding: 10px 0;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  
+  .line:after{
+    content: ' ';
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin-top: 10px; 
+    background: linear-gradient(left, rgba(209, 240, 97, 0) 0%,rgb(255, 255, 26) 20%,rgb(255, 255, 77) 53%,rgb(255, 255, 102) 79%,rgba(147,184,189,0) 100%); 
+  }
