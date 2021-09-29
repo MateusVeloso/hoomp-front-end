@@ -18,18 +18,18 @@ function Cadastro() {
                                 <Form>
                                     <Form.Group className="mb-3" controlId="formBasicEmail">
                                         <Form.Label>Nome:</Form.Label>
-                                        <Form.Control type="email" placeholder="Coloque seu nome..." />
+                                        <Form.Control type="email" placeholder="Coloque seu nome..." className={style.focus} />
                                     </Form.Group>
                                     <Form.Group className="mb-3" controlId="formBasicEmail">
                                         <Form.Label>Email:</Form.Label>
-                                        <Form.Control type="email" placeholder="Coloque seu E-mail..." />
+                                        <Form.Control type="email" placeholder="Coloque seu E-mail..." className={style.focus} />
                                     </Form.Group>
                                     <Form.Group className="mb-3" controlId="formBasicPassword">
                                         <Form.Label>Senha:</Form.Label>
-                                        <Form.Control type="password" placeholder="Coloque sua senha..." />
+                                        <Form.Control type="password" placeholder="Coloque sua senha..." className={style.focus} />
                                     </Form.Group>
                                     <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                                        <Form.Check type="checkbox" label="Concordo com os Termos de uso do Hoomp." />
+                                        <Form.Check type="checkbox" label="Concordo com os Termos de uso do Hoomp." className={style.focus} />
                                     </Form.Group>
                                     <Col md={{ span: 6, offset: 5 }}>
                                         <Button variant="outline-warning">Cadastrar</Button>{' '}
