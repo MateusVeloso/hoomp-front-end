@@ -16,3 +16,10 @@
   margin-top: 10px; 
   background: linear-gradient(left, rgba(209, 240, 97, 0) 0%,rgb(255, 255, 26) 20%,rgb(255, 255, 77) 53%,rgb(255, 255, 102) 79%,rgba(147,184,189,0) 100%); 
 }
+
+.focus:focus {
+  border-color: #cccccc;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;       
+}
